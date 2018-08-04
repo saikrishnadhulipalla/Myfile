@@ -9,3 +9,5 @@ for i in range(0,len(k)):
         d=' '
     else:d=''
     print(k[i],end=d)
+if k==[]:
+    print("'-1'")
