@@ -1,6 +1,7 @@
 lw,up=input().split()
 lw=int(lw)
 up=int(up)
+lst=[]
 for nm in range(lw,up):
     temp=nm
     sum=0
@@ -10,4 +11,9 @@ for nm in range(lw,up):
         sum+=dg**order
         nm=nm//10
     if(temp==sum):
-        print(temp)
+        lst.append(temp)
+for i in range(0,len(lst)):
+    if i<len(lst)-1:
+        k=' '
+    else:k=''
+    print(lst[i],end=k)
